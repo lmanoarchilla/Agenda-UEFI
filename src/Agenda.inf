@@ -1,0 +1,44 @@
+﻿# @file
+#  Sample UEFI Application Reference EDKII Module
+#
+#  Esta es una aplicación UEFI sencilla de tipo agenda.
+#
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+#
+#
+
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = Agenda
+  FILE_GUID                      = 653c6398-ffa3-45c9-9783-480ad0a822c8
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  Agenda.h
+  Agenda.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
